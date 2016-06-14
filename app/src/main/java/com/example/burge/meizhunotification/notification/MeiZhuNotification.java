@@ -59,14 +59,14 @@ public class MeiZhuNotification implements View.OnTouchListener {
         mStatusBarHeight = getStatusBarHeight();
         mScreenWidth = mContext.getResources().getDisplayMetrics().widthPixels;
 
-        mWindowManager = (WindowManager) mContext.getSystemService(Context.WINDOW_SERVICE);
+        mWindowManager = (WindowManager) 
+		mContext.getSystemService(Context.WINDOW_SERVICE);
         mWindowParams = new WindowManager.LayoutParams();
         mWindowParams.type = WindowManager.LayoutParams.TYPE_TOAST;// 系统提示window
         mWindowParams.gravity = Gravity.LEFT | Gravity.TOP;
         mWindowParams.width = WindowManager.LayoutParams.MATCH_PARENT;
         mWindowParams.height = WindowManager.LayoutParams.WRAP_CONTENT;
-        mWindowParams.flags = WindowManager.LayoutParams.FLAG_FULLSCREEN |
-                WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH |
+        mWindowParams.flags =
                 WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL |
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS;
         //设置进入和退出动画
