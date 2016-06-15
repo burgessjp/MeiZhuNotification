@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
                         .setTime(System.currentTimeMillis())
                         .setImgRes(R.drawable.notify)
                         .setTitle("你收到了一条消息")
-                        .setContent("格局不够，读再多书也只能做一个屌丝").build();
+                        .setContent("人丑就要多读书").build();
 
 
         findViewById(R.id.btn_show_window).setOnClickListener(new View.OnClickListener() {
